@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 64.5%;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+#headshot {
+  background-image: url("./assets/profile.png");
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  height: 400px;
+  color: #ffffff;
+  border-radius: 4px;
+  position: relative;
+}
+
+h1 {
+  font-size: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+#aboutme-cont {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#aboutme-cont p {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  color: rgb(124, 124, 124);
+  width: 110%;
+  line-height: 25px;
+}
+
+#aboutme-cont div {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-btn,
+.inner-btn,
+.contact-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+}
+
+.inner-btn {
+  width: 15px;
+  height: 15px;
+}
+
+.inner-btn:first-of-type {
+  background-image: url("./assets/github.png");
+}
+
+.inner-btn:last-of-type {
+  background-image: url("./assets/share.png");
+}
+
+.social-btn:first-of-type,
+.contact-btn:first-of-type {
+  background-image: url("./assets/github.png");
+}
+
+.social-btn:nth-of-type(2),
+.contact-btn:nth-of-type(2) {
+  background-image: url("./assets/likedin.png");
+}
+
+.social-btn:last-of-type,
+.contact-btn:last-of-type {
+  background-image: url("./assets/twitter.png");
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mid {
+  margin-top: 100px;
+}
+
+#mid h2 {
+  margin-bottom: 15px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 50px;
+  border-radius: 2px;
+}
+
+.project-card:last-of-type {
+  margin-bottom: 100px;
+}
+
+.project-card:nth-of-type(2n + 1) .project-img {
+  background-image: url("./assets/stock1.jpg");
+}
+
+.project-card:nth-of-type(2n) .project-img {
+  background-image: url("./assets/stock2.jpg");
+}
+
+.project-img {
+  height: 200px;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: top;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.project-title h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.project-title div {
+  display: flex;
+  gap: 10px;
+}
+
+.project-card p {
+  font-size: 1.3rem;
+  color: rgb(124, 124, 124);
+  width: 90%;
+  align-self: center;
+}
+
+#bot {
+  color: #fff;
+  background-color: #0790b1;
+  width: 100%;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#bot h2 {
+  align-self: center;
+}
+
+#bot > p {
+  padding: 0 25px 0 25px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+#address,
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 100;
+  padding: 0 25px 0 25px;
+}
+
+#contact {
+  margin-top: 15px;
+}
+
+#address p:first-of-type {
+  margin-top: 10px;
+}
+
+#address p,
+#contact p {
+  font-size: 1.3rem;
+}
+
+#bot div:nth-of-type(3) {
+  margin: 20px 0;
+  align-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#bot div:nth-of-type(4) {
+  height: 350px;
+  width: 100%;
+  background-image: url("./assets/footerProfile.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.triangle-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #0790b1;
+  clip-path: polygon(0 0, 150% 0, 0 100%);
+  z-index: -1;
+}
